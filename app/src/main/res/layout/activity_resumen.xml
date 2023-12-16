@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resum">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <TextView
+        android:id="@+id/anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Partida anterior:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/acertadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Aciertos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guia1" />
+
+    <TextView
+        android:id="@+id/fallosNumeros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/acertadas"
+        app:layout_constraintTop_toTopOf="@id/acertadas" />
+
+    <TextView
+        android:id="@+id/fallados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fallos"
+        app:layout_constraintEnd_toEndOf="@+id/anterior"
+        app:layout_constraintTop_toTopOf="@id/guia1" />
+
+    <TextView
+        android:id="@+id/acertadasNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/fallados"
+        app:layout_constraintTop_toTopOf="@id/fallados" />
+
+    <TextView
+        android:id="@+id/PorcetanjeAcierto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Porcentaje aciertos:"
+        app:layout_constraintStart_toStartOf="@id/anterior"
+        app:layout_constraintTop_toBottomOf="@id/fallados" />
+
+    <TextView
+        android:id="@+id/porcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/PorcetanjeAcierto"
+        app:layout_constraintTop_toTopOf="@id/PorcetanjeAcierto" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Total:"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PorcetanjeAcierto" />
+
+    <TextView
+        android:id="@+id/acertadasActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Aciertos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guia2" />
+
+    <TextView
+        android:id="@+id/acertadasNumeroActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/acertadasActual"
+        app:layout_constraintTop_toTopOf="@id/acertadasActual" />
+
+    <TextView
+        android:id="@+id/falladosActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fallos"
+        app:layout_constraintEnd_toEndOf="@+id/anterior"
+        app:layout_constraintTop_toTopOf="@id/guia2" />
+
+    <TextView
+        android:id="@+id/fallosNumerosActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/falladosActual"
+        app:layout_constraintTop_toTopOf="@id/falladosActual" />
+
+    <TextView
+        android:id="@+id/PorcetanjeAciertoActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Porcentaje aciertos:"
+        app:layout_constraintStart_toStartOf="@id/anterior"
+        app:layout_constraintTop_toBottomOf="@id/falladosActual" />
+
+    <TextView
+        android:id="@+id/porcentajeActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/PorcetanjeAciertoActual"
+        app:layout_constraintTop_toTopOf="@id/PorcetanjeAciertoActual" />
+
+    <Button
+        android:id="@+id/regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

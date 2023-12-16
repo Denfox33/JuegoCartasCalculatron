@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/cartaf"
+            android:scaleType="matrix"/>
+
+        <LinearLayout
+        android:id="@+id/vidasLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#BC302929">
+
+        <TextView
+            android:id="@+id/intent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Vidas"
+            android:textSize="28dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/intentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/intent"
+            android:text="10"
+            android:textSize="28dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text=""
+            android:gravity="center"
+            android:textSize="30sp"
+            android:paddingTop="10dp"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/dorso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guia1"
+            app:layout_constraintStart_toEndOf="@id/img2"
+            android:adjustViewBounds="true"
+            android:onClick="onCardClick"
+            />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@id/img1"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/img1"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@id/img2"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/img1"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@id/img3"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/img1"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintTop_toBottomOf="@id/img4"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+
+            />
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@id/img5"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/img5"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+        <ImageView
+            android:id="@+id/img7"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@id/img6"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/img6"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@id/img7"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/img7"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+
+        <ImageView
+            android:id="@+id/img9"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintTop_toBottomOf="@id/img5"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+        <ImageView
+            android:id="@+id/img10"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@id/img9"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/img9"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+        <ImageView
+            android:id="@+id/img11"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@id/img10"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/img10"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+        <ImageView
+            android:id="@+id/img12"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toEndOf="@id/img11"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/img11"
+            app:srcCompat="@drawable/dorso"
+            android:onClick="onCardClick"
+            />
+
+        <Button
+            android:id="@+id/Reinicio"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/img11"
+            android:text="Reiniciar"
+            android:background="@drawable/botona"
+            android:onClick="reiniciarPartida"
+            />
+
+        <Button
+            android:id="@+id/Volver"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="volver"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Reinicio"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/botona"
+            android:onClick="volverAlMain"
+
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guia1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
